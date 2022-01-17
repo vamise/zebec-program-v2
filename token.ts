@@ -25,9 +25,9 @@ async function findAssociatedTokenAddress(
 
 async function main() {
     const wallet: PublicKey = new PublicKey(
-        'ErAykG8kXqpAjGGWbZ9BuQMq7j5SEk9fhrXV8JRpysx4') // sender/recipient address
+        'C6DTWNjFALaBwaJcp55fkW6182ghm59VpbxbzGjbBei3') // sender/recipient address
     const wallet2: PublicKey = new PublicKey(
-            '2ibSirDWk5P68ZKmQQSxUMtiWQFRuanpPfMfaYzxgSRv'); //token address
+            '8ytfrZ45J2nsZVaNX8stRauFxFia4Sbvrx7uAui5dmTm'); //token address
     console.log( await (await findAssociatedTokenAddress(wallet,wallet2)).toBase58()) //
 
     
@@ -36,10 +36,10 @@ async function main() {
 
 async function pda_seed() {
     const wallet: PublicKey = new PublicKey(
-        'ErAykG8kXqpAjGGWbZ9BuQMq7j5SEk9fhrXV8JRpysx4') // sender/recipient address
+        'C6DTWNjFALaBwaJcp55fkW6182ghm59VpbxbzGjbBei3') // sender/recipient address
     const wallet2: PublicKey = new PublicKey(
-            '2ibSirDWk5P68ZKmQQSxUMtiWQFRuanpPfMfaYzxgSRv'); //token address
-    let address = new PublicKey("J75jd3kjsABQSDrEdywcyhmbq8eHDowfW9xtEWsVALy9"); // sender address
+            '8ytfrZ45J2nsZVaNX8stRauFxFia4Sbvrx7uAui5dmTm'); //token address
+    let address = new PublicKey("Bettxr9Gh1So6kvMsMhU4aRJSi1fanQT7CE1MmyZ3LDq"); // sender address
     console.log(address)
     let recipient = new PublicKey("BvNbvbaE6NKdGXMYK3Vtrosq46vdxDwif4SJ9qLzEJ7b"); // sender address
     let base58publicKey = new PublicKey('7FNWTfCo3AyRBFCvr49daqKHehdn2GjNgpjuTsqy5twk'); // program address
